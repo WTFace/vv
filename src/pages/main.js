@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import { Banner } from '../components/banner';
 
 export class Main extends Component{
@@ -8,6 +10,18 @@ export class Main extends Component{
             similar: [],
             categories: [],
             popular: [],
+            slide: [
+                {id: 1},
+                {id: 2},
+                {id: 3},
+                {id: 4},
+                {id: 5},
+                {id: 6},
+                {id: 7},
+                {id: 8},
+                {id: 9},
+                {id: 10},
+            ]
         }
     }
 
@@ -87,16 +101,16 @@ export class Main extends Component{
     render(){
         return (
             <div>
-                <div className="flex justify-around pt-4">
+                <div className="flex justify-around py-4">
                     <div>전체 카테고리</div>
                     <div>프리미엄 홍보관 </div>
                     <div>홍보관</div>
                     <div>전자계약</div>
                     <div>공개입찰</div>
                 </div>
-                <div>
-                    main banner slide
-                </div>
+                <Carousel autoPlay={true} interval={5000} showIndicators={false} infiniteLoop={true}>
+                    {this.state.slide.map(i => <div className="p-4 h-16 bg-gray-400" key={i.id}>{i.id}</div>)}
+                </Carousel>
                 <Banner height="24" title="유사 회원 서비스" data={this.state.similar}></Banner>
                 <Banner height="24" title="추천 카테고리" data={this.state.categories}></Banner>
                 <Banner height="24" title="다른 회원이 많이 보고 있는 서비스" data={this.state.popular}></Banner>
