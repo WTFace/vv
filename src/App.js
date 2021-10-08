@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
-import { CardList } from './components/card-list/card-list';
-import {SearchBox} from './components/search-box/search-box';
-import { Top } from './components/top/top';
 import "@material-tailwind/react/tailwind.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import { Top } from './top/top';
+import { routes } from './routes';
 
 class App extends Component{
   constructor(){
@@ -31,13 +36,11 @@ class App extends Component{
     const filtered = monsters.filter( m => m.name.includes(searchField));
 
     return (
-      <div className="App m-4">
+      <div className="App max-w-7xl m-auto p-2">
         <Top></Top>
-
-        <button onClick={this.func}>button</button>
-        <SearchBox handleChange={this.handleChange}/>
-        <CardList monsters={filtered}>
-        </CardList>  
+        <Switch>
+          {routes.map(r => <Route exact={r.exact} path={r.path} component={r.component}></Route>)}
+        </Switch>
       </div>
     )
   }
