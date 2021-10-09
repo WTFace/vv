@@ -1,15 +1,15 @@
 import React from "react";
 
-export const Banner = props => (
+export const Banner = ({title, data, height}) => (
     <div className="my-5">
         <div>
-            <span>{props.title}</span>
+            <span>{title}</span>
             <button className="float-right">더보기 &gt; </button>
         </div>
         <div className="grid grid-cols-4 gap-4">
-            {props.data.map(d => (
+            {data.map(d => (
                 <div className="" key={d.id}>
-                    <div className={`w-full h-${props.height} bg-gray-600`}></div>
+                    <div className={`w-full h-${height} bg-gray-600`}></div>
                     <div>{d.name}</div>
                     <div>{d.industry}</div>
                     <div>{d.type}</div>
