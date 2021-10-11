@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export class Footer extends Component{
     render(){
         return (
-            <div className="my-3">
+            <div className="py-4">
                 <div className="grid grid-cols-2 mt-2 p-4 border-t-2">
                     <div className="grid grid-cols-2">
                         <div>
@@ -14,7 +14,7 @@ export class Footer extends Component{
                         <button className="border border-gray-500 py-1 ml-4 w-1/2">1:1 문의</button>
                     </div>
                     
-                    <div className="flex justify-end gap-8">
+                    <div className="flex justify-end gap-8 pr-4">
                         <Link to="intro">회사소개</Link>
                         <Link to="map">회사약도</Link>
                         <Link to="terms-of-use">이용약관</Link>
