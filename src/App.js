@@ -40,7 +40,7 @@ class App extends Component{
       <div className="App max-w-7xl m-auto p-2">
         <Top></Top>
         <Switch>
-          {routes.map(r => <Route exact={r.exact} path={r.path} component={r.component}></Route>)}
+          <div className="my-4 p-4">{routes.map(r => <Route exact={r.exact} path={r.path} component={r.component}></Route>)}</div>
         </Switch>
         <Footer></Footer>
       </div>
