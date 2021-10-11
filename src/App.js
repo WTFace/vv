@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import { Top } from './top/top';
+import { Footer } from './footer/footer';
 import { routes } from './routes';
 
 class App extends Component{
@@ -41,6 +42,7 @@ class App extends Component{
         <Switch>
           {routes.map(r => <Route exact={r.exact} path={r.path} component={r.component}></Route>)}
         </Switch>
+        <Footer></Footer>
       </div>
     )
   }
