@@ -12,22 +12,18 @@ export const routes = [
     },
     {
       path: "/login",
-      component: Login,
-      exact: true
+      component: Login
     },
     {
       path: "/register",
-      component: Register,
-      exact: true
+      component: Register
     },
     {
       path: "/intro",
-      component: Intro,
-      exact: true
+      component: Intro
     },
     {
       path: "/location",
-      component: Location,
-      exact: true
+      component: Location
     }
 ];
