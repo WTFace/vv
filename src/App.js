@@ -39,6 +39,7 @@ class App extends Component{
     return (
       <div className="App -w-7xl m-auto px-6 pt-36">
         <Top></Top>
+        <a href="http://mypill.co.kr/">pill pill pill</a>
         <div className="my-4 p-4">
           <Switch>
             {routes.map((r, i) => <Route key={i} exact={r.exact} path={r.path} component={r.component}></Route>)}
