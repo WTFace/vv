@@ -11,7 +11,7 @@ export class Footer extends Component{
                             <div>고객센터 : 070-8691-3773</div>
                             <div>09:00 ~ 18:00 (점심시간 : 12:00 ~ 13:00)</div>
                         </div>
-                        <button className="border border-gray-500 py-1 ml-4 w-1/2">1:1 문의</button>
+                        <Link to="ask" className="border border-gray-500 text-center leading-loose pt-2 ml-4 w-1/2">1:1 문의</Link>
                     </div>
                     
                     <div className="flex justify-end gap-8 pr-4">

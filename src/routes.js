@@ -4,6 +4,7 @@ import { Register } from './pages/register';
 import { Intro } from './pages/intro';
 import { Location } from './pages/location';
 import { TermsOfUse } from './pages/terms';
+import { Ask } from './pages/ask';
 
 export const routes = [
     {
@@ -30,5 +31,9 @@ export const routes = [
     {
       path: "/terms-of-use",
       component: TermsOfUse
-    }
+    },
+    {
+      path: "/ask",
+      component: Ask
+    },
 ];
