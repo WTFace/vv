@@ -3,6 +3,7 @@ import { Login } from './pages/login';
 import { Register } from './pages/register';
 import { Intro } from './pages/intro';
 import { Location } from './pages/location';
+import { TermsOfUse } from './pages/terms';
 
 export const routes = [
     {
@@ -25,5 +26,9 @@ export const routes = [
     {
       path: "/location",
       component: Location
+    },
+    {
+      path: "/terms-of-use",
+      component: TermsOfUse
     }
 ];

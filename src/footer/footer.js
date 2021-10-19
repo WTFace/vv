@@ -17,8 +17,8 @@ export class Footer extends Component{
                     <div className="flex justify-end gap-8 pr-4">
                         <Link to="intro">회사소개</Link>
                         <Link to="location">회사약도</Link>
-                        <Link to="terms-of-use">이용약관</Link>
-                        <Link to="private-data">개인정보처리방침</Link>
+                        <Link to="terms-of-use?q=terms">이용약관</Link>
+                        <Link to="terms-of-use?q=private">개인정보처리방침</Link>
                     </div>
                 </div>
 
