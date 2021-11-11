@@ -11,8 +11,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### shared layout (src > top, footer)
 
-- `Top`
-    `Nav`, `Search`, `Update`
+- `Top` 
+    - `Nav`
+    - `Search`
+    - `Update`
 - `Footer`
 
 #### indivisual pages (src > pages)
