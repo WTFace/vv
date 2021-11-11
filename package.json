@@ -2,7 +2,7 @@
   "name": "zombie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wtface.github.io/vv",
+  "homepage": "https://wtface.github.io/",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@material-tailwind/react": "0.3.4",

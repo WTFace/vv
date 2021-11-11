@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "@material-tailwind/react/tailwind.css";
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -33,8 +33,6 @@ class App extends Component{
   }
 
   render(){
-    const {monsters, searchField} = this.state;
-    const filtered = monsters.filter( m => m.name.includes(searchField));
 
     return (
       <div className="App -w-7xl m-auto px-6 pt-36">
